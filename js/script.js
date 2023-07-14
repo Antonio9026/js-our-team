@@ -66,4 +66,26 @@ for (let i = 0; i < members.length; i++) {
 
 }
 
+// seleziono elemento HTML 
+let getDocument = document.getElementById("card_container")
 
+// invoco la funzione
+cardCreation(getDocument, members)
+
+
+
+// Stampare le stesse informazioni su DOM sottoforma di stringhe
+function cardCreation(element, array) {
+
+    for (let i = 0; i < members.length; i++) {
+        const teamCard = members[i];
+
+        getDocument.innerHTML += `<div class ="img_container">
+        <img src="img/${teamCard.photo}" alt="">
+        </div>
+        <div class ="name">${teamCard.name}</div>
+        <div class ="surname">${teamCard.surname}</div>
+        <div class ="job">${teamCard.job}</div>`
+
+    }
+}
