@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.title-container{
+    width :460px;
+    margin : 0 auto;
+    text-align: center;
+    margin-top : 40px;
+}
+#card_container {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.team_card_container {
+    width: calc(100% /3)
+}
+
+.card_container {
+    width: 100px;
+    
+    
+}
+
+.info {
+    width: 210px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+img {
+    width: 200px;
+    border-radius: 0 40px 20px;
+    margin-top: 80px;
+}
+
+
+

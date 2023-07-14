@@ -80,12 +80,18 @@ function cardCreation(element, array) {
     for (let i = 0; i < members.length; i++) {
         const teamCard = members[i];
 
-        getDocument.innerHTML += `<div class ="img_container">
+        getDocument.innerHTML += `
+        <div class ="team_card_container">
+        <div class ="img-container">
         <img src="img/${teamCard.photo}" alt="">
         </div>
-        <div class ="name">${teamCard.name}</div>
-        <div class ="surname">${teamCard.surname}</div>
-        <div class ="job">${teamCard.job}</div>`
+        <div calss ="card_container">
+        <h2 class ="info name">${teamCard.name}</h2>
+        <div class ="info surname">${teamCard.surname}</div>
+        <div class ="info job">${teamCard.job}</div>
+        </div>
+        </div>
+        `
 
     }
 }
