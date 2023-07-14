@@ -33,7 +33,6 @@ const members = [
         "job": "Chief Editor",
         "photo": "angela - caroll - chief - editor.jpg"
     },
-
     {
         "name": "Walter",
         "surname": "Gordon",
@@ -60,3 +59,12 @@ const members = [
         "photo": "barbara - ramos - graphic - designer.jpg"
     },
 ]
+
+// Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
+
+for (const key in members) {
+
+    const element = members[key];
+    console.log(members[key]);
+
+}
