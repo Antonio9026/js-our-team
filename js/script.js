@@ -61,8 +61,16 @@ const members = [
 ]
 
 // Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
+
 for (let i = 0; i < members.length; i++) {
     const teamCard = members[i];
+    for (const key in teamCard) {
+   
+       console.log(key);
+        console.log(teamCard[key]);
+    
+}
+
 
 }
 
