@@ -60,16 +60,16 @@ const members = [
     },
 ]
 
-// Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
+// Stampo su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
 
 for (let i = 0; i < members.length; i++) {
     const teamCard = members[i];
     for (const key in teamCard) {
-   
-       console.log(key);
+
+        console.log(key);
         console.log(teamCard[key]);
-    
-}
+
+    }
 
 
 }
@@ -78,12 +78,12 @@ for (let i = 0; i < members.length; i++) {
 let getDocument = document.getElementById("card_container")
 
 // invoco la funzione
-cardCreation(getDocument, members)
+cardCreation(getDocument,members)
 
 
 
-// Stampare le stesse informazioni su DOM sottoforma di stringhe
-function cardCreation(element, array) {
+// creo funzione per stampare su dom le cards con le immagini
+function cardCreation(element, arrayObject) {
 
     for (let i = 0; i < members.length; i++) {
         const teamCard = members[i];
